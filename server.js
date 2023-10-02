@@ -5,7 +5,7 @@ const app = express();
 
 const port = process.env.PORT || 5005;
 
-connectDB();
+connectToMongoDB();
 
 app.use(express.json());
 app.use("/api/users", require("./routes/userRoute"));
